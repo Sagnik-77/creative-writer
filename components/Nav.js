@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { auth } from "../utils/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Image from "next/image";
 
 export default function Nav() {
   const [user, loading] = useAuthState(auth);
@@ -30,7 +31,7 @@ export default function Nav() {
                 Dashboard
               </button>
             </Link>
-            <img
+            <Image
               className="w-10 rounded-full cursor-pointer"
               src={user.photoURL}
               referrerPolicy="no-referrer"
