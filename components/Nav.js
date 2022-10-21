@@ -35,6 +35,7 @@ export default function Nav() {
               className="w-10 rounded-full cursor-pointer"
               src={user.photoURL}
               referrerPolicy="no-referrer"
+              alt="userImage"
             />
           </div>
         )}
